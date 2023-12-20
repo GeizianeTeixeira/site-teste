@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Victor+Mono:wght@200&display=swap');
+
+:root{
+    --cor-primaria: #20003D;
+    --cor-secundaria: #E2CCF5;
+    --cor-terciaria: #F99417;
+    --cor-hover: #3D116A;
+    --cor-rodape: #d0afec;
+
+    --fonte-principal: 'Victor Mono', monospace;
+
+
+}
+
+body { 
+background-color: #20003D;
+color: var(--cor-secundaria);
+margin: 0;
+}
+
+
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 2rem;
+}
+
+
+.cabecalho{
+color: var(--cor-secundaria);
+padding: 2% 15%;
+}
+
+
+.cabecalho-menu{
+    display: flex;
+    gap: 5rem;  
+}
+
+
+.cabecalho-menu-link{
+    text-decoration: none;
+    font-size: 1.30rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-weight: 200;
+}
+
+
+.conteudo-explicativo{
+    text-align: justify;
+    padding: 2% 15%;
+}
+
+
+.titulo{
+    color: var(--cor-terciaria);
+    font-size: 3.10rem;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    text-align: center;  
+}
+
+
+.img{
+    text-align: center;
+    width: auto;
+}
+
+.imagem-andressa{
+    width: 50%;
+    height: auto;
+    border-radius: 1.87rem;
+    padding: 0 0 1.20rem 0;
+}
+
+
+.subtitulo{
+    color: var(--cor-terciaria);
+    font-size: 2.10rem;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    text-align: center;  
+}
+
+
+.conteudo{
+    
+    font-size: 1.37rem;
+    font-family: var(--fonte-principal);
+    font-weight: 200;
+    
+}
+
+
+.apresentacao-links-subtitulo{
+    color: var(--cor-terciaria);
+    font-size: 2.10rem;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+
+
+}
+.apresentacao-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 3.12rem 0;
+}
+
+
+.link{
+    padding: 1.25rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 1.25rem;
+    border:  var(--cor-secundaria) solid;
+    border-radius: 1rem;
+    width: 15.60rem;
+    height: 1.87rem;
+    font-family: var(--fonte-principal);
+    font-weight: 200;
+    text-align: center;
+}
+
+
+.link:hover{
+    background-color: var(--cor-hover);
+}
+
+
+.imagem-whatsaap{
+    width: 1.87rem;
+}
+
+
+.imagem-instagram{
+    width: 1.87rem;
+}
+
+
+.rodape{
+background-color: var(--cor-rodape); 
+color: var(--cor-primaria);
+font-family: var(--fonte-principal);
+font-weight: 200;
+text-align: center;
+padding: 1.25rem;
+}
+
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho-menu{
+        justify-content: center
+    }
+
+    ..titulo{
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+    .conteudo , .conteudo-explicativo{
+        padding: 10%;
+        margin: 0% 5%;
+    }
+
+    .rodape{
+        width: 100%;
+    }
+
+}
